@@ -1,0 +1,89 @@
+body{
+   /* margin: 20px; */
+   height: 2000px;
+}
+
+/* 
+h1 {
+   color: aqua;
+   background-color: black;
+   margin: 0;
+   padding: 4px;
+   padding-left: 16px;
+ }
+
+ header{
+   background-color: rgb(45, 248, 19);
+    padding: 2px; 
+   margin-bottom: 15px;
+ }
+
+ #section1{
+   width: 100%;
+   background-color: blueviolet;
+   color: white;
+   height: 200px;
+   border: 3px solid red;
+ }
+
+ #section1 h4{
+   color: aqua;
+ }
+
+
+ /* multiple selector */
+
+ /* h2,h3,h4{
+   color: yellow;
+ }
+
+ #para{
+   padding: 2px;
+   color: rgb(28, 234, 28);
+ }
+
+ .common{
+   padding: 15px;
+   background-color: aqua;
+   color: black;
+ }  */
+
+ /* h1{
+  font-size: 45px;
+  font-weight: normal; 
+ } */
+
+ /* #new{
+  background-color: blue;
+  margin-bottom: 15px;
+  display: inline;
+  width: 100%;
+ } */
+ /* #position{
+  background-color: rgb(124, 232, 8);
+  width: 500px;
+  height: 300px;
+  right: 15px;
+  top: 15px;
+  position:fixed;
+ } */
+
+
+  button:hover{
+    background-color: aqua;
+    padding: 2px;
+  }
+
+  input:focus{
+    background-color: aqua;
+    border: 1px solid black;
+  }
+
+  div p:nth-child(even){
+    color: blue;
+    background-color: aqua;
+  }
+
+  p::selection{
+    background-color: yellow;
+  }

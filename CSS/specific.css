@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: darkgoldenrod;
+}
+
+div h1{
+    color: blue ;
+}
+
+.header{
+    color: rgb(88, 227, 23);
+}
+
+div .header{
+    color: rgb(230, 14, 129);
+}
+
+#header{
+    color: rgb(230, 241, 18);
+}
+
+
+div #header{
+    color: rgb(186, 13, 249);
+}
+
+
+

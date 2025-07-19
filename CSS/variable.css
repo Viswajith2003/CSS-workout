@@ -1,0 +1,26 @@
+:root{
+    --bgc:yellow;
+}
+
+
+
+.header-1{
+    color: red;
+    background-color: var(--bgc);
+}
+.header-2{
+    color: blue;
+    background-color: var(--bgc);
+}
+.header-3{
+    color: rgb(0, 0, 0);
+    background-color: var(--bgc);
+}
+.header-4{
+    color: rgb(13, 219, 13);
+    background-color: var(--bgc);
+}
+.header-5{
+    color: orange;
+    background-color: var(--bgc);
+}
