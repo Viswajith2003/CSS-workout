@@ -28,5 +28,8 @@ div:nth-child(2) {
 div:nth-child(3) {
     background-color: blue;
     z-index: 3;
+    position: relative;
+    left: 50px;
+    margin-top: -40px;
 }
 
