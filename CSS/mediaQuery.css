@@ -1,0 +1,25 @@
+.section-1 {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-1 {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    background-color: cornflowerblue;
+  }
+  span{
+    display: none;
+  }
+}
+
+@media (min-width:700px) and (max-width:900px){
+  .section-1{
+    background-color: yellow;
+  }
+}
+
+
