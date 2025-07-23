@@ -1,0 +1,26 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+/* attributte selector */
+
+h1[class*="-"]{    /* same all class name */
+    color: red;
+}
+h1[class^="set"]{  /* first class name */
+    color: red;
+}
+h1[class$="ios"]{   /* last class name */
+    color: red;
+}
+
+
+/* not selector */
+h1:not(.sectios){
+    color:blue;
+}
+
+/* is selector */
+:is(.inside-one,.inside-two,.inside-three) span{
+    color: blueviolet;
+}
+
