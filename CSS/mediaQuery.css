@@ -1,4 +1,4 @@
-.section-1 {
+/* .section-1 {
   width: 500px;
   height: 500px;
   background-color: aqua;
@@ -22,4 +22,227 @@
   }
 }
 
+ */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto; /*  center div */
+  padding: 0 20px;
+  max-width: 1000px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: azure;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight: 700px;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.nav-links li a:hover {
+  color: black;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0742f3;
+  transition: width 0.2s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  /* background: linear-gradient(120deg #004ddb 0%, #74f305 100%); */
+  background: linear-gradient(135deg, #c53030 0%, #037ee9 100%);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgb(1, 247, 255);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #c53030 0%, #037ee9 100%);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(229, 62, 62, 0.2);
+}
+
+/* Mobile Menu Checkbox (hidden) */
+.mobile-menu-toggle {
+  display: none;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>');
+  transition: background-image 0.3s ease;
+}
+
+/* Change to close icon when checked */
+.mobile-menu-toggle:checked + .mobile-menu-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+}
+
+/* Mobile Menu Dropdown */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: azure;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-menu-toggle:checked ~ .mobile-menu {
+  max-height: 400px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.mobile-menu ul li {
+  margin: 15px 0;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  padding: 10px 0;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu ul li a:hover {
+  color: black;
+}
+
+.mobile-menu .mobile-btn {
+  margin: 20px 0;
+}
+
+/* mobile responsive */
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+@media (min-width: 640) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .mobile-menu-icon {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

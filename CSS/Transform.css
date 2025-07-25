@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    background-color: black;
+
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 300px;
+    width:300px;
+    margin-top: 200px;
+    background-color: aqua;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s ease;
+
+    transform: scale(1,2) rotate(145deg);
+}
