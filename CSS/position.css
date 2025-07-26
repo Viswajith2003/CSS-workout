@@ -14,41 +14,47 @@ main {
   background: #002238;
   color: wheat;
   padding: 5px;
+  display: flex;
+  flex-direction: row;
   position: relative;
-  flex-direction: column;
 }
 
 .box1 {
   background: #f60c0c;
-  width: 100%;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   text-align: center;
   line-height: 80px;
   margin-top: 5px;
 }
 .box2 {
   background: #0c4af6;
-  width: 100%;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   text-align: center;
   line-height: 80px;
   margin-top: 5px;
+  position: absolute;
+  left:20px;
+  top:80px;
 
 }
 .box3 {
   background: #0cf627;
-  width: 100%;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   text-align: center;
   line-height: 80px;
   margin-top: 5px;
+
+  /* box-sizing: border-box; */
   /* position: absolute; */
 
 }
 .box4 {
   background: #bc0cf6;
-  width: 100%;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   text-align: center;
   line-height: 80px;
   margin-top: 5px;
@@ -56,8 +62,8 @@ main {
 }
 .box5 {
   background: #f6cf0c;
-  width: 100%;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   text-align: center;
   line-height: 80px;
   margin-top: 5px;
