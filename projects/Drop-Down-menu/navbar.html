@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown menu</title>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="items">
+        <li class="first">
+          <a href="#home">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about"
+            ><i class="fa fa-user" aria-hidden="true"></i>About Us</a
+          >
+          <div class="dropdown1">
+            <ul class="items">
+              <li><a href="">Mission</a></li>
+              <li><a href="">Vision</a></li>
+              <li><a href="">Team</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#service"
+            ><i class="fa fa-clone" aria-hidden="true"></i>Service</a
+          >
+          <div class="dropdown1">
+            <ul class="items">
+              <li><a href="">Web design</a></li>
+              <li class="hover-me">
+                <a href="">Marketing</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <div class="dropdown2">
+                    <ul class="items">
+                        <li><a href="">SEO</a></li>
+                        <li><a href="">Social Media</a></li>
+                        <li><a href="">Email Marketing</a></li>
+                      </ul>
+                </div>
+              </li>
+              <li class="hover-me">
+                <a href="">Mobile App</a
+                ><i class="fa fa-angle-right" aria-hidden="true"></i>
+                <div class="dropdown2">
+                    <ul class="items">
+                        <li><a href="">Android App</a></li>
+                        <li><a href="">iOS App</a></li>
+                        <li><a href="">Ionic App</a></li>
+                        <li><a href="">Flutter App</a></li>
+                        <li><a href="">Unity App</a></li>
+                      </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#clients"
+            ><i class="fa fa-users" aria-hidden="true"></i>Clients</a
+          >
+        </li>
+        <li>
+          <a href="#investers"
+            ><i class="fa fa-angellist" aria-hidden="true"></i>Investers</a
+          >
+        </li>
+        <li>
+          <a href="#pricing"
+            ><i class="fa fa-inr" aria-hidden="true"></i>Pricing</a
+          >
+        </li>
+        <li>
+          <a href="#training"
+            ><i class="fa fa-edit" aria-hidden="true"></i>Training</a
+          >
+        </li>
+        <li>
+          <a href="#contact"
+            ><i class="fa fa-phone" aria-hidden="true"></i>Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
