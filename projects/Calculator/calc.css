@@ -14,43 +14,62 @@ h1 {
   align-items: center;
 }
 .container {
-  background-color: black;
+  background-color: #343434;
   width: auto;
   height: auto;
   color: white;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 7px;
   overflow: hidden;
 }
 
-.container>input{
-    width: 90%;
-}
-
-.screen {
-  background-color: aqua;
+#screen {
+  background-color: #a5d5e4;
   padding: 8px;
   border-radius: 5px;
+  font-size: 2rem;
+  width: auto;
+  height: 50px;
+  color: black;
+  text-align: end;
 }
 
 .rows {
   margin-top: 20px;
+  width: auto;
   /* background-color: blanchedalmond; */
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* gap: 5px; */
+}
+input[type="button"] {
+  padding: 16px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  gap: 12px;
+  width: 100px;
+  height: 70px;
 }
 
 .num {
-  padding: 10px 17px;
-  border-radius: 5px;
+  background-color: #4d4d4d;
+  color: white;
+}
+.num:hover {
+  border: 2px solid rgb(171, 246, 10);
 }
 .oper {
-  padding: 10px 17px;
-  border-radius: 5px;
+  background-color: #83857f;
+  color: white;
+}
+.oper:hover {
+  border: 2px solid rgb(171, 246, 10);
 }
 .clear {
-  padding: 10px 17px;
   background-color: red;
   color: white;
-  border-radius: 5px;
+  /* background-color: #4d4d4d; */
+}
+.clear:hover {
+  border: 2px solid rgb(171, 246, 10);
 }

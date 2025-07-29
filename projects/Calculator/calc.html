@@ -11,34 +11,105 @@
     <div class="main">
       <div class="container">
         <h3>CASIO</h3>
-        <input type="text" class="screen" />
+        <input type="text" id="screen" />
         <div>
           <div class="rows">
-            <input type="button" value="7" class="num" />
-            <input type="button" value="8" class="num" />
-            <input type="button" value="9" class="num" />
-            <input type="button" value="/" class="oper" />
+            <input
+              type="button"
+              value="7"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="8"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="9"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="/"
+              class="oper"
+              onclick="btnClick(value)"
+            />
           </div>
           <div class="rows">
-            <input type="button" value="4" class="num" />
-            <input type="button" value="5" class="num" />
-            <input type="button" value="6" class="num" />
-            <input type="button" value="*" class="oper" />
+            <input
+              type="button"
+              value="4"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="5"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="6"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="*"
+              class="oper"
+              onclick="btnClick(value)"
+            />
           </div>
           <div class="rows">
-            <input type="button" value="1" class="num" />
-            <input type="button" value="2" class="num" />
-            <input type="button" value="3" class="num" />
-            <input type="button" value="+" class="oper" />
+            <input
+              type="button"
+              value="1"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="2"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="3"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input
+              type="button"
+              value="+"
+              class="oper"
+              onclick="btnClick(value)"
+            />
           </div>
           <div class="rows">
-            <input type="button" value="c" class="clear" />
-            <input type="button" value="0" class="num" />
-            <input type="button" value="=" class="num" />
-            <input type="button" value="-" class="oper" />
+            <input type="button" value="c" class="clear" onclick="clrScreen()" />
+            <input
+              type="button"
+              value="0"
+              class="num"
+              onclick="btnClick(value)"
+            />
+            <input type="button" value="=" class="num" onclick="eqClick()" />
+            <input
+              type="button"
+              value="-"
+              class="oper"
+              onclick="btnClick(value)"
+            />
           </div>
         </div>
       </div>
     </div>
+    <script src="./calc.js"></script>
   </body>
 </html>
