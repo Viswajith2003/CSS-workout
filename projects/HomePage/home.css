@@ -17,22 +17,22 @@ nav {
   display: flex;
   background: rgba(0, 0, 0, 0.3);
   color: white;
-  padding: 0px 60px;
+  padding: 0px 120px;
   justify-content: space-between;
   backdrop-filter: blur(10px);
 }
 
 .logo h1 {
   color: orange;
-  font-size: 28px;
+  font-size: 48px;
   margin: 0;
   padding: 20px 0;
 }
 
 .items ul {
   display: flex;
-  gap: 52px;
-  margin: 28px 0 0 0;
+  gap: 72px;
+  margin: 38px 0 0 0;
   padding: 0;
 }
 
@@ -56,7 +56,7 @@ nav {
 }
 
 .searchbar input:first-child {
-  padding: 6px 12px;
+  padding: 14px 12px;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border: 1px solid orange;
@@ -75,7 +75,7 @@ nav {
 }
 
 .searchbar input:last-child {
-  padding: 7px 12px;
+  padding: 14px 12px;
   background-color: orange;
   color: white;
   border: 1px solid orange;
@@ -83,6 +83,10 @@ nav {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: -20px;
+}
+.searchbar input:last-child:hover {
+  transform: scaleX(1.1);
 }
 
 .searchbar input:last-child:hover {
@@ -94,36 +98,37 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 0 20px;
-  min-height: calc(100vh - 100px);
+  /* padding: 0 0px; */
+  /* min-height: calc(100vh - 100px); */
 }
 
 .content {
-  margin-top: 60px;
-  line-height: 55px;
+  margin-top: 120px;
+  line-height: 65px;
   flex: 1;
   max-width: 600px;
 }
 
 .content h1 {
-  font-size: 50px;
+  font-size: 80px;
   margin: 0;
+  line-height: 92px;
 }
 
 .content h1 span {
   color: rgb(243, 113, 7);
-  font-size: 48px;
+  font-size: 88px;
 }
 
 .content p {
-  line-height: 28px;
-  margin-top: 20px;
+  line-height: 32px;
+  margin-top: 40px;
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .btn {
-  padding: 12px 30px;
+  padding: 16px 40px;
   text-transform: uppercase;
   background-color: rgb(243, 113, 7);
   border-radius: 8px;
@@ -131,31 +136,32 @@ main {
   border: none;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+  /* transition: background-color 0.3s ease, transform 0.2s ease; */
 }
 
 .btn:hover {
   background-color: #e6690a;
-  transform: translateY(-2px);
+  transform: scaleX(1.1);
 }
 
 /* right Login page in main */
 .login {
   background-color: rgba(0, 0, 0, 0.8);
-  width: 320px;
-  height: 430px;
-  margin-top: 90px;
+  width: 420px;
+  height: 480px;
+  margin-top: 120px;
   border-radius: 12px;
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 0px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .login h2 {
   margin-bottom: 42px;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .login input {
@@ -165,7 +171,7 @@ main {
   color: white;
   border: none;
   border-bottom: 1px solid rgb(238, 144, 3);
-  padding: 8px 5px;
+  padding: 8px 0px;
   font-size: 14px;
 }
 
@@ -180,16 +186,20 @@ main {
 
 .login button {
   width: 250px;
-  height: 42px;
+  height: 50px;
   border: none;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
+.para{
+  font-size: 20px;
+}
 .word {
   color: rgb(229, 137, 0);
   cursor: pointer;
   text-decoration: underline;
+  font-size: 18px;
 }
 
 .word:hover {
@@ -197,7 +207,7 @@ main {
 }
 
 .login-footer p {
-  font-size: 14px;
+  font-size: 16px;
   margin: 25px 0 15px 0;
 }
 
@@ -221,8 +231,7 @@ main {
 }
 
 @media (max-width: 768px) {
-
-  nav{
+  nav {
     padding: 0px 30px;
   }
   .items {
@@ -262,12 +271,16 @@ main {
   .login {
     width: 380px;
     height: 430px;
-    padding:30px 2px;
+    padding: 30px 2px;
   }
 }
 
-@media (max-width:1020px){
-  .items ul{
+@media (max-width: 1286px) {
+  .items ul {
     display: none;
   }
+}
+
+@media (max-width: 1070px){
+  
 }
